@@ -12,4 +12,4 @@ class Salary(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     salary = models.FloatField()
     discounts = models.FloatField()
-    payday = models.FloatField()
+    payday = models.DateField()
